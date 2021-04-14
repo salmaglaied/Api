@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 const Profile_component = (props) => {
     
@@ -16,5 +17,12 @@ const Profile_component = (props) => {
 Profile_component.defaultProps={
     fullName:"salma", bio:"",profession:"web developper"
 }
+Profile_component.propTypes = {
+    
+    fullName: PropTypes.string,
+   bio: PropTypes.string,
+    profession: PropTypes.string,
+   
+   };
 
 export default Profile_component;
